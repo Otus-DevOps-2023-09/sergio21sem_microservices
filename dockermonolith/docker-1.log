@@ -1,9 +1,0 @@
-REPOSITORY               TAG       IMAGE ID       CREATED          SIZE
-sergey/ubuntu-tmp-file   latest    d8312e85ae02   19 seconds ago   56.7MB
-ubuntu                   18.04     d1a528908992   7 months ago     56.7MB
-hello-world              latest    ee301c921b8a   8 months ago     9.14kB
-
-
-## Задания со *
-## ?? чем отличается контейнер от образа.
-# Ответ: Образ содержит базовые библиотеки, зависимости и файлы, необходимые для запуска контейнера. Контейнер Docker — это экземпляр образа Docker
