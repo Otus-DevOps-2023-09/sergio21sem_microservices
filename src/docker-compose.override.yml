@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  ui:
+    environment:
+      - DEBUG=2
+  post:
+    deploy:
+      mode: replicated
+      replicas: 2
+  comment:
+    environment:
+      - DEBUG=2
+    deploy:
+      mode: replicated
+      replicas: 2
