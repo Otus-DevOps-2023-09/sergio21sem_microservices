@@ -8,5 +8,3 @@
 
 
 ##Docker-4
-1. Выполнено основное ДЗ с docker-compose
-2*. Задание со "*" docker-compose.override.yml
