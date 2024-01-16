@@ -3,6 +3,7 @@ stages:
  - build
  - test
  - review
+<<<<<<< HEAD
  - stage
  - production
 
@@ -11,6 +12,8 @@ variables:
 before_script:
 - cd reddit
 - bundle install
+=======
+>>>>>>> b596c5c (small update on ci)
 
 variables:
  DATABASE_URL: 'mongodb://mongo/user_posts'
