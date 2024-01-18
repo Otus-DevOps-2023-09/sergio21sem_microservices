@@ -9,3 +9,4 @@ terraform.tfvars
 secret.auto.tfvars
 #terraform.tfvars.example
 *.retry
+src/.env
