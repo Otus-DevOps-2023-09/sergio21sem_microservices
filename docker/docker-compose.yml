@@ -68,20 +68,31 @@ services:
     networks:
       front_net:
 
+  blackbox:
+    image: ${UUSERNAME}/blackbox_exporter:${BLACKBOX_IMAGE_TAG}
+    ports:
+    - 9115:9115
+    command: # Передаем доп параметры в командной строке
+      - '--config.file=/config/blackbox.yml'
+    networks:
+      front_net:
+
   mongodb-exporter:
     image: percona/mongodb_exporter:0.20
     ports:
-      - 27017:27017
+      - 27117:27017
       - 9216:9216
-    command:  '--mongodb.uri=mongodb://user:password@post_db:27017'
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    command:  '--mongodb.uri=mongodb://127.0.0.1:27017'
     networks:
       front_net:
-        aliases:
-          - post_db
-          - comment_db
+
 volumes:
   reddit_db:
   prometheus_data:
+  blackbox_exporter:
 
 networks:
   back_net:
