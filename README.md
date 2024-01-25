@@ -17,3 +17,9 @@ sergio21sem microservices repository
 Узнайте как образуется базовое имя проекта. Можно ли его задать?Если можно то как?
 Ответ:
 Базовое имя проекта можно задать через файл .env через pre-defined environment variables COMPOSE_PROJECT_NAME или через ключь "-p" при запуске dockep-compose run -d -p same
+
+
+#Создание и запуск системы мониторинга Prometheus.
+Задание со *
+Добавлен в Docker-compose: mongodb-exporter (нужно допилить авторизацию в монгу, для корректной работы), blackbox-exporter
+Makefile - позволяет собрать и запушить образы контейнеров
