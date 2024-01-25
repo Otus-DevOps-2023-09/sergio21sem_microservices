@@ -9,4 +9,4 @@ terraform.tfvars
 secret.auto.tfvars
 #terraform.tfvars.example
 *.retry
-docker/.env*
+docker/.env
