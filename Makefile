@@ -15,9 +15,6 @@ USER_NAME=sergio21sem
 help:
 	    @echo "Makefile arguments:"
 	    @echo ""
-	    @echo "alpver - Alpine Version"
-	    @echo "kctlver - kubectl version"
-	    @echo ""
 	    @echo "Makefile commands:"
 	    @echo "build"
 	    @echo "push"
