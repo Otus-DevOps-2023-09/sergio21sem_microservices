@@ -6,10 +6,10 @@ services:
   post:
     deploy:
       mode: replicated
-      replicas: 2
+      replicas: 1
   comment:
     environment:
       - DEBUG=2
     deploy:
       mode: replicated
-      replicas: 2
+      replicas: 1
