@@ -14,5 +14,10 @@ spec:
         app: post
     spec:
       containers:
-      - image: chromko/post
+      - image: sergio21sem/post:1.0
         name: post
+        env:
+        - name: POST_DATABASE_HOST
+          value: post-db
+        - name: POST_DATABASE
+          value: posts
